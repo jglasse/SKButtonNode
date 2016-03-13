@@ -1,9 +1,12 @@
+//SKButtonNode.swift
+//Using contributions from: http://stackoverflow.com/questions/19082202/setting-up-buttons-in-skscene
+
 import Foundation
 import SpriteKit
 
-class SKButton: SKSpriteNode {
+class SKButtonNode: SKSpriteNode {
     
-    enum SKButtonActionType: Int {
+    enum SKButtonNodeActionType: Int {
         case TouchUpInside = 1,
         TouchDown, TouchUp
     }
@@ -58,7 +61,7 @@ class SKButton: SKSpriteNode {
     /**
      * Taking a target object and adding an action that is triggered by a button event.
      */
-    func setButtonAction(target: AnyObject, triggerEvent event:SKButtonActionType, action:Selector) {
+    func setButtonAction(target: AnyObject, triggerEvent event:SKButtonNodeActionType, action:Selector) {
         
         switch (event) {
         case .TouchUpInside:
