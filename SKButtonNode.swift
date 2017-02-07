@@ -1,5 +1,6 @@
 //SKButtonNode.swift
 //Using contributions from: http://stackoverflow.com/questions/19082202/setting-up-buttons-in-skscene
+// updated to Swift 3 syntax by JG 1/13/17
 
 // updated to Swift 3 syntax by JG 1/13/17
 
